@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Overview</title>
@@ -11,202 +6,379 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Basic Reset and Layout */
+			body {
+				margin: 0;
+				font-family: Arial, sans-serif;
+				line-height: 1.6;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			#wrapper {
+				width: 100%;
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 15px;
+			}
+
+			header, nav, section, footer {
+				padding: 15px 0;
+			}
+
+			/* Header */
+			#header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 10px;
+				background: #333;
+				color: #fff;
+			}
+
+			#header .logo {
+				font-size: 1.5em;
+				color: #fff;
+				text-decoration: none;
+			}
+
+			#header nav {
+				display: none;
+			}
+
+			#header nav ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			#header nav ul li {
+				margin: 0;
+			}
+
+			#header nav ul li a {
+				text-decoration: none;
+				color: #fff;
+			}
+
+			/* Responsive Menu Toggle */
+			@media (max-width: 768px) {
+				#header nav {
+					display: block;
+				}
+
+				#header nav ul {
+					display: flex;
+					flex-direction: column;
+					background: #333;
+					padding: 0;
+				}
+
+				#header nav ul li {
+					margin: 5px 0;
+				}
+			}
+
+			/* Banner */
+			#banner .image img {
+				max-width: 100%;
+				height: auto;
+				display: block;
+			}
+
+			/* Responsive iframes */
+			.iframe-container {
+				position: relative;
+				width: 100%;
+				padding-top: 56.25%; /* 16:9 aspect ratio */
+				margin-bottom: 20px;
+				overflow: hidden;
+				border-radius: 8px;
+				background: #f4f4f4;
+			}
+
+			.iframe-container iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border: 0;
+			}
+
+			/* Content */
+			.inner {
+				padding: 20px;
+			}
+
+			.content {
+				margin-bottom: 20px;
+			}
+
+			/* Buttons */
+			.button, .actions .button {
+				display: inline-block;
+				padding: 10px 20px;
+				margin: 10px 0;
+				font-size: 1em;
+				color: #fff;
+				background: #007bff;
+				border: none;
+				border-radius: 5px;
+				text-align: center;
+				text-decoration: none;
+				cursor: pointer;
+			}
+
+			.button:hover, .actions .button:hover {
+				background: #0056b3;
+			}
+
+			.actions .button {
+				margin-left: 0;
+			}
+
+			/* Footer */
+			#footer {
+				text-align: center;
+				padding: 20px;
+				background: #333;
+				color: #fff;
+			}
+
+			#footer .icons {
+				margin-bottom: 10px;
+			}
+
+			#footer .icons a {
+				margin: 0 10px;
+				color: #fff;
+				text-decoration: none;
+			}
+
+			/* Responsive Layout Adjustments */
+			@media (max-width: 768px) {
+				header, footer {
+					text-align: center;
+				}
+
+				.inner {
+					padding: 10px;
+				}
+
+				.actions .button {
+					width: 100%;
+					text-align: center;
+					margin: 10px 0;
+				}
+			}
+
+			@media (max-width: 480px) {
+				#header .logo {
+					font-size: 1.2em;
+				}
+
+				.content p {
+					font-size: 0.9em;
+				}
+
+				.button, .actions .button {
+					display: block;
+					width: 100%;
+					text-align: center;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
-						<a href="index.html" class="logo"><strong>Home</strong> <span></span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
+			<!-- Header -->
+			<header id="header" class="alt style2">
+				<a href="index.html" class="logo"><strong>Home</strong> <span></span></a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+			<!-- Menu -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="landing.html">Visualizations and Projects</a></li>
+					<li><a href="generic.html">Work Project | Case Study</a></li>
+					<li><a href="https://gray-jan-20.tiiny.site">Resume|CV</a></li>
+				</ul>
+			</nav>
+
+			<!-- Banner -->
+			<section id="banner" class="style2">
+				<div class="inner">
+					<span class="image">
+						<img src="images/delix-lisbon-winter-school-on-data-science-and-engineering.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h1>Visualizations in Python and Power BI</h1>
 					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Visualizations and Projects</a></li>
-							<li><a href="generic.html">Work Project | Case Study</a></li>
-							<li><a href="https://gray-jan-20.tiiny.site">Resume|CV</a></li>
-						</ul>
-					</nav>
-
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner" class="style2">
-						<div class="inner">
-							<span class="image">
-								<img src="images/delix-lisbon-winter-school-on-data-science-and-engineering.jpg" alt="" />
-							</span>
-							<header class="major">
-								<h1>Visualizations in Python and Power BI</h1>
-							</header>
-							<div class="content">
-								<p>Utilizing Matplotlib, Plotly, and Power BI with real world data to conduct EDA, and beautiful visualizations</p>
-							</div>
-						</div>
-					</section>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h2>Overview</h2>
-									</header>
-									<p>The purpose of showcasing these visuals is to demonstrate proficiency in loading and extracting data from csv and json files, as well as showing proficiency for navigating the matplotlib and plotly libraries in python. The code behind the visualizations will demonstrate my ability to parse, index, refactor, test and write clean code for data analysis.</p>
-								</div>
-							</section>
-
-						<!-- Two -->
-							<section id="two" class="spotlights">
-								<section>
-										<iframe src="html/python1-most-starred.html"
-										autosize = 'true' width="1140" height="541.25">
-									</iframe>
-									</a>
-									<div class="content">
-										<div class="outer">
-											<header class="major">
-												<h3>Fetching Data from Github's API Server | Fetched on 08-12-24</h3>
-											</header>
-											<p> Produced in Python with the Plotly library, this graph captures the top 30 highest rated projects currently hosted on Github. View the source code to see how this graph was produced logically. More customizability will be added within the next update of the site</p>
-											<ul class="actions">
-												<li><a href="https://github.com/zhairewelch/Python_Projects/blob/main/Fetching_API_Data" class="button">Source Code</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section>
-									<iframe title="Project Netflix" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=a2205d64-f7bc-4bee-a5c9-117cf480a327&autoAuth=true&ctid=cfa792cf-7768-4341-8857-81754c2afa1f" frameborder="0" allowFullScreen="true"></iframe>
-									</a>
-									<div class="content">
-										<div class="outer">
-											<header class="major">
-												<h3>Identifying Trends in Power BI</h3>
-											</header>
-											<p>This snapshot captures trends in Netflix' consumer sales data from 2019-2023. Click the link below to learn more about this project, and the findings associated with the analysis.</p>
-											<ul class="actions">
-												<li><p class="button">Case Study Coming Soon</p></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section>
-									<iframe src="html/global_earthquakes_pastmonth.html" autosize = 'true' width="1140" height="541.25"></iframe>
-									</a>
-									<div class="content">
-										<div class="outer">
-											<header class="major">
-												<h3>Analyzing Earthquake Data with Plotly | Fetched on 08-10-24</h3>
-											</header>
-											<p>Earthquake data parsed, analyzed, and visualized within Python & Plotly from a .geojson file provided by the United States Geological Survey.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/zhairewelch/Python_Projects/blob/main/Earthquake_Visualization_2024" class="button">Source Code</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-							</section>
-
-						<!-- Three -->
-							<section id="three">
-								<div class="inner">
-									<header class="major">
-										<h2>Work Related Projects</h2>
-									</header>
-									<p>During my time as a Materials Planner, I've deployed Power BI as the primary tool for Operational Analytics - Producing a fluid dashboard that seamlessly communicates with Manufacturing, Purchasing, Quality, and Facilities. The resulting dashboard demanded a full ETL process leveraging the tools at my disposal i.e, SAGE100, Microsoft Excel, FastMaint, Smartsolve, Sharepoint, and Power BI. Click on the Case Study to see a breakdown of the process.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button next">Case Study</a></li>
-									</ul>
-								</div>
-							</section>
-
+					<div class="content">
+						<p>Utilizing Matplotlib, Plotly, and Power BI with real world data to conduct EDA, and beautiful visualizations</p>
 					</div>
+				</div>
+			</section>
 
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">welchzhare@gmail.com</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(562) 972-8793</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>21430 Plane Tree Ln<br />
-										Newhall, CA 91321<br />
-										United States of America</span>
-									</div>
-								</section>
-							</section>
+			<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+				<section id="one">
+					<div class="inner">
+						<header class="major">
+							<h2>Overview</h2>
+						</header>
+						<p>The purpose of showcasing these visuals is to demonstrate proficiency in loading and extracting data from csv and json files, as well as showing proficiency for navigating the matplotlib and plotly libraries in python. The code behind the visualizations will demonstrate my ability to parse, index, refactor, test and write clean code for data analysis.</p>
+					</div>
+				</section>
+
+				<!-- Two -->
+				<section id="two" class="spotlights">
+					<section>
+						<div class="iframe-container">
+							<iframe src="html/python1-most-starred.html" autosize="true"></iframe>
+						</div>
+						<div class="content">
+							<header class="major">
+								<h3>Fetching Data from Github's API Server | Fetched on 08-12-24</h3>
+							</header>
+							<p>Produced in Python with the Plotly library, this graph captures the top 30 highest rated projects currently hosted on Github. View the source code to see how this graph was produced logically. More customizability will be added within the next update of the site.</p>
+							<ul class="actions">
+								<li><a href="https://github.com/zhairewelch/Python_Projects/blob/main/Fetching_API_Data" class="button">Source Code</a></li>
+							</ul>
 						</div>
 					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://github.com/zhairewelch" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/zdw562/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+					<section>
+						<div class="iframe-container">
+							<iframe title="Project Netflix" src="https://app.powerbi.com/reportEmbed?reportId=a2205d64-f7bc-4bee-a5c9-117cf480a327&autoAuth=true&ctid=cfa792cf-7768-4341-8857-81754c2afa1f" frameborder="0" allowFullScreen="true"></iframe>
+						</div>
+						<div class="content">
+							<header class="major">
+								<h3>Identifying Trends in Power BI</h3>
+							</header>
+							<p>This snapshot captures trends in Netflix' consumer sales data from 2019-2023. Click the link below to learn more about this project, and the findings associated with the analysis.</p>
+							<ul class="actions">
+								<li><p class="button">Case Study Coming Soon</p></li>
 							</ul>
 						</div>
-					</footer>
+					</section>
+					<section>
+						<div class="iframe-container">
+							<iframe src="html/global_earthquakes_pastmonth.html" autosize="true"></iframe>
+						</div>
+						<div class="content">
+							<header class="major">
+								<h3>Analyzing Earthquake Data with Plotly | Fetched on 08-10-24</h3>
+							</header>
+							<p>Earthquake data parsed, analyzed, and visualized within Python & Plotly from a .geojson file provided by the United States Geological Survey.</p>
+							<ul class="actions">
+								<li><a href="https://github.com/zhairewelch/Python_Projects/blob/main/Earthquake_Visualization_2024" class="button">Source Code</a></li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+				<!-- Three -->
+				<section id="three">
+					<div class="inner">
+						<header class="major">
+							<h2>Work Related Projects</h2>
+						</header>
+						<p>During my time as a Materials Planner, I've deployed Power BI as the primary tool for Operational Analytics - Producing a fluid dashboard that seamlessly communicates with Manufacturing, Purchasing, Quality, and Facilities. The resulting dashboard demanded a full ETL process leveraging the tools at my disposal i.e, SAGE100, Microsoft Excel, FastMaint, Smartsolve, Sharepoint, and Power BI. Click on the Case Study to see a breakdown of the process.</p>
+						<ul class="actions">
+							<li><a href="generic.html" class="button next">Case Study</a></li>
+						</ul>
+					</div>
+				</section>
 
 			</div>
 
+			<!-- Contact -->
+			<section id="contact">
+				<div class="inner">
+					<section>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="6"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" class="primary" /></li>
+								<li><input type="reset" value="Clear" /></li>
+							</ul>
+						</form>
+					</section>
+					<section class="split">
+						<section>
+							<div class="contact-method">
+								<span class="icon solid alt fa-envelope"></span>
+								<h3>Email</h3>
+								<a href="#">welchzhare@gmail.com</a>
+							</div>
+						</section>
+						<section>
+							<div class="contact-method">
+								<span class="icon solid alt fa-phone"></span>
+								<h3>Phone</h3>
+								<span>(562) 972-8793</span>
+							</div>
+						</section>
+						<section>
+							<div class="contact-method">
+								<span class="icon solid alt fa-home"></span>
+								<h3>Address</h3>
+								<span>21430 Plane Tree Ln<br />
+								Newhall, CA 91321<br />
+								United States of America</span>
+							</div>
+						</section>
+					</section>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/zhairewelch" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/zdw562/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		</div>
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
